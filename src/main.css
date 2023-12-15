@@ -3,3 +3,20 @@
 
 @import "styles/abstracts/variables.css";
 @import "styles/abstracts/animations.css";
+
+@import "styles/components/wrapper.css";
+@import "styles/components/container.css";
+/*@import "styles/components/button.css";*/
+/*@import "styles/components/arrow-btn.css";*/
+/*@import "styles/components/desktop-form.css";*/
+/*@import "styles/components/mobile-form.css";*/
+/*@import "styles/components/title.css";*/
+
+@import "styles/sections/header.css";
+/*@import "styles/sections/top-section.css";*/
+/*@import "styles/sections/advantages.css";*/
+/*@import "styles/sections/homes.css";*/
+/*@import "styles/sections/destination.css";*/
+/*@import "styles/sections/sign-up.css";*/
+/*@import "styles/sections/reviews.css";*/
+/*@import "styles/sections/footer.css";*/

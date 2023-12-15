@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Jost:wght@400;600;700&family=Nunito+Sans:opsz,wght@6..12,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Jost:wght@400;600;700;800&family=Nunito+Sans:opsz,wght@6..12,700&display=swap"
       rel="stylesheet"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -17,6 +17,61 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>lol</h1>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="logo header__logo">
+              <a href="" class="logo__link">
+                <svg>
+                  <use href="./src/images/favicons/sprite.svg#logo" />
+                </svg>
+              </a>
+              <p class="logo__title">Furnity.</p>
+            </div>
+            <nav class="menu header__menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Badroom</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Living Room</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Dining Room</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Office</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Kitchen</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Sofa</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="basket-actions header__basket-actions">
+              <li class="basket-actions__item">
+                <a href="" class="basket-actions__link">
+                  <svg>
+                    <use href="./src/images/favicons/sprite.svg#search" />
+                  </svg>
+                </a>
+              </li>
+              <li class="basket-actions__item">
+                <a href="" class="basket-actions__link">
+                  <svg>
+                    <use href="./src/images/favicons/sprite.svg#basket" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main class="main"></main>
+      <footer class="footer"></footer>
+    </div>
   </body>
 </html>

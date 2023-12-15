@@ -1,0 +1,29 @@
+:root {
+  --text-main-color: #1d1f23;
+  --secondary-text-color: #1d1f23b2;
+  --general-white-color: #ffffff;
+  --accent-yellow-color: #f6973f;
+  --accent-pink-color: #ef4358;
+
+  --main-size: 18px;
+  --max-width: 1200px;
+  --padding-main: 120px;
+  /*--unit: 16px;*/
+  --block-space: 120px;
+}
+
+@media (max-width: 1024px) {
+  /*For tablets:*/
+
+  :root {
+    /*--main-size: 18px;*/
+  }
+}
+
+@media (max-width: 480px) {
+  /*For mobile phones:*/
+
+  :root {
+    /*--main-size: 12px;*/
+  }
+}
