@@ -1,17 +1,19 @@
 .header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .header__wrapper {
   display: flex;
-  min-height: 78px;
+  /*min-height: 78px;*/
+  padding: 20px 0;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
 .logo svg {
@@ -19,16 +21,23 @@
   height: 21px;
 }
 
+.logo__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-main-color);
+}
+
 .logo__title {
   font-weight: 800;
   line-height: normal;
 }
 
-.header__menu{
+.header__menu {
   /*flex: 1 1 auto;*/
   /*display: flex;*/
   /*justify-content: center;*/
-  margin-left: -25px
+  margin-left: -25px;
 }
 
 .menu {
@@ -39,12 +48,16 @@
 
 .menu__list {
   display: flex;
+  align-items: center;
   gap: 50px;
-
 }
 
 .menu__link {
   color: var(--secondary-text-color);
+}
+
+.menu__link:hover {
+  color: var(--accent-yellow-color);
 }
 
 .basket-actions {
@@ -59,10 +72,19 @@
 .basket-actions__item {
 }
 
+.basket-actions__item :hover {
+  color: var(--accent-yellow-color);
+}
+
 .basket-actions__link {
+  color: var(--text-main-color);
 }
 
 .basket-actions__link svg {
   width: 24px;
   height: 24px;
+}
+
+.basket-actions__link :hover {
+  animation: bounce 1.2s infinite;
 }
