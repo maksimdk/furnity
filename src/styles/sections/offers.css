@@ -1,4 +1,98 @@
-.offers{
+.offers {
   padding: var(--padding-main) 0;
 }
 
+/*==============================*/
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 42px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 268px;
+}
+
+.card__image {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 239px;
+  background-color: var(--bg-main-color);
+  border-radius: 20px 20px 0 0;
+}
+
+.card__image img {
+  max-width: 218px;
+  position: absolute;
+  top: -50px;
+  left: 26px;
+}
+
+.card__content {
+  padding: 14px 22px;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.card__category {
+  margin-bottom: 30px;
+}
+
+.card__subtitle {
+  color: #8d8d8d;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card__title-link {
+  text-decoration: none;
+  color: var(--text-main-color);
+  font-size: 21px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.card__action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__price {
+  color: var(--text-main-color);
+  font-size: 21px;
+  font-weight: 600;
+  display: flex;
+  gap: 3px;
+}
+
+.card__price span {
+  display: block;
+}
+
+.currency {
+  font-size: 15px;
+}
+
+.card__button {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.card__button svg {
+  width: 24px;
+  height: 24px;
+}
+
+/*==============================*/
