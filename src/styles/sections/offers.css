@@ -5,12 +5,12 @@
   /*background-color: red;*/
 }
 
-.offers__list {
+.offers__cards {
 }
 
 /*==============================*/
 
-.list {
+.cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
