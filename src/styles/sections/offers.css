@@ -1,5 +1,11 @@
 .offers {
-  padding: var(--padding-main) 0;
+  position: relative;
+  top: -162px;
+  /*padding: var(--padding-main) 0;*/
+  /*background-color: red;*/
+}
+
+.offers__list {
 }
 
 /*==============================*/
@@ -96,3 +102,6 @@
 }
 
 /*==============================*/
+
+.offers__arrow {
+}

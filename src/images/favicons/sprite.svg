@@ -15,4 +15,8 @@
     <symbol id="plus" viewBox="0 0 25 25">
         <path fill="currentColor" d="M22.227 12.281c0-.77-.624-1.393-1.393-1.393h-6.963V3.925a1.393 1.393 0 1 0-2.785 0v6.963H4.122a1.393 1.393 0 0 0 0 2.786h6.964v6.963a1.393 1.393 0 1 0 2.785 0v-6.963h6.963c.77 0 1.393-.624 1.393-1.393Z"/>
     </symbol>
+
+    <symbol id="arrow" viewBox="0 0 28 28">
+        <path stroke="currentColor" stroke-width="2.174" stroke-linecap="square" d="M5.304 14.435h17.21m0 0s-4.878-3.208-5.87-5.87m5.87 5.87s-4.312 3.015-5.87 5.87"/>
+    </symbol>
 </svg>
