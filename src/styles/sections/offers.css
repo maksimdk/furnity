@@ -14,7 +14,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 42px;
+  /*gap: 42px;*/
+  row-gap: 110px;
 }
 
 .card {
