@@ -1,0 +1,74 @@
+.reviews {
+  background-color: var(--bg-secondary-color);
+  color: var(--general-white-color);
+  padding: calc(var(--block-space) + 20px);
+}
+
+.reviews__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviews__content {
+}
+
+.reviews__title {
+  color: var(--general-white-color);
+  margin-bottom: var(--unit);
+}
+
+.review {
+  max-width: 385px;
+  margin-bottom: 30px;
+}
+
+.review__user {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.review__user-image {
+  border-radius: 50px;
+}
+
+.review__user-info {
+}
+
+.review__user-name {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.review__user-position {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.review__text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.reviews__scrolling {
+  display: flex;
+  gap: 20px;
+}
+
+.reviews__arrow {
+  background-color: #313136;
+}
+
+.reviews__arrow svg {
+  color: rgba(255, 255, 255, 0.7);
+}

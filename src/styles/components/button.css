@@ -13,7 +13,7 @@
 }
 
 .button:hover {
-  background-color: #e06c6c;
+  background-color: var(--accent-pink-color);
 }
 
 /*======================================*/
