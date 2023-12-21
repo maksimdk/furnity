@@ -1,5 +1,5 @@
 .contact {
-  padding: calc(var(--block-space) * 2);
+  padding: calc(var(--block-space) * 2) 0;
 }
 
 .contact__wrapper {

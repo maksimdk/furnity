@@ -1,0 +1,5 @@
+.footer {
+  padding: 38px 0;
+  background-color: var(--bg-secondary-color);
+  color: var(--general-white-color);
+}

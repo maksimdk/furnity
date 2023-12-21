@@ -1,7 +1,7 @@
 .reviews {
   background-color: var(--bg-secondary-color);
   color: var(--general-white-color);
-  padding: calc(var(--block-space) + 20px);
+  padding: calc(var(--block-space) + 20px) 0;
 }
 
 .reviews__wrapper {
@@ -71,4 +71,8 @@
 
 .reviews__arrow svg {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.reviews__img img {
+  border-radius: 10px;
 }
