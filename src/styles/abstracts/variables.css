@@ -11,7 +11,7 @@
   --max-width: 1200px;
   --padding-main: 120px;
   --unit: 50px;
-  --block-space: 120px;
+  --block-space: 50px;
 }
 
 @media (max-width: 1024px) {

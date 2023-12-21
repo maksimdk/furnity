@@ -1,5 +1,5 @@
 .shopping {
-  padding: var(--padding-main) 0;
+  padding: var(--block-space) 0;
 }
 
 .shopping__wrapper {
