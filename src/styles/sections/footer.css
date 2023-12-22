@@ -3,3 +3,44 @@
   background-color: var(--bg-secondary-color);
   color: var(--general-white-color);
 }
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__logo .logo__title {
+  color: var(--general-white-color);
+}
+
+.footer__menu {
+  /*flex: 1 1 auto;*/
+  /*justify-content: center;*/
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.footer__item {
+}
+
+.footer__link {
+  color: var(--general-white-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer__link:hover {
+  color: var(--accent-pink-color);
+}
+
+.footer__copyright {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
