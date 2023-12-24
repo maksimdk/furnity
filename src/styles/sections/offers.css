@@ -1,8 +1,11 @@
 .offers {
   position: relative;
   top: -162px;
-  /*padding: var(--padding-main) 0;*/
-  /*background-color: red;*/
+  /*padding: calc(var(--block-space) * 2) 0;*/
+}
+
+.offers__wrapper {
+  position: relative;
 }
 
 .offers__cards {
@@ -15,7 +18,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   /*gap: 42px;*/
-  row-gap: 110px;
+  row-gap: 65px;
 }
 
 .card {
@@ -106,4 +109,16 @@
 /*==============================*/
 
 .offers__arrow {
+}
+
+.offers__arrow--next {
+  top: 170px;
+  right: -25px;
+  position: absolute;
+}
+
+.offers__arrow--previous {
+  top: 170px;
+  left: -25px;
+  position: absolute;
 }

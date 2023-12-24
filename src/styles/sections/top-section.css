@@ -23,11 +23,11 @@
   margin-bottom: 10px;
 }
 
-.top-section__title span{
+.top-section__title span {
   color: var(--accent-yellow-color);
 }
 
-.top-section__subtitle{
+.top-section__subtitle {
   text-align: center;
   color: var(--text-main-color);
   line-height: normal;
@@ -35,6 +35,6 @@
   margin-bottom: 22px;
 }
 
-.top-section__button{
+.top-section__button {
   padding: 18px 36px;
 }
