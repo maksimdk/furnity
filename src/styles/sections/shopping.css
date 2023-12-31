@@ -61,6 +61,10 @@
   padding: 20px 30px;
 }
 
-.shopping__button:hover{
+.shopping__button:hover {
   background-color: var(--accent-yellow-color);
+}
+
+.shopping__img img {
+  /*width: 100%;*/
 }

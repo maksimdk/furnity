@@ -16,18 +16,42 @@
   --block-space: 50px;
 }
 
-@media (max-width: 1024px) {
-  /*For tablets:*/
-
+@media (max-width: 1200px) {
   :root {
-    /*--main-size: 18px;*/
+    --padding-main: 80px;
+    /*--unit: 50px;*/
+    /*--block-space: 50px;*/
   }
 }
 
-@media (max-width: 480px) {
-  /*For mobile phones:*/
-
+@media (max-width: 1024px) {
   :root {
-    /*--main-size: 12px;*/
+    --padding-main: 60px;
+    /*--unit: 50px;*/
+    --block-space: 40px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  :root {
+    --padding-main: 24px;
+    /*--unit: 50px;*/
+    --block-space: 35px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --padding-main: 16px;
+    /*--unit: 50px;*/
+    --block-space: 25px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  :root {
+    --main-size: 14px;
+    /*--unit: 50px;*/
+    --block-space: 15px;
   }
 }
