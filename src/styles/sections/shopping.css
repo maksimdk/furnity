@@ -60,3 +60,7 @@
   background-color: var(--accent-pink-color);
   padding: 20px 30px;
 }
+
+.shopping__button:hover{
+  background-color: var(--accent-yellow-color);
+}

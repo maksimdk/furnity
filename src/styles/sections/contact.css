@@ -3,9 +3,19 @@
 }
 
 .contact__wrapper {
+}
+
+.contact__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.contact__map{
+  width: 100%;
+  min-height: 450px;
 }
 
 .contact__title {

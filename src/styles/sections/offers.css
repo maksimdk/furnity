@@ -17,7 +17,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /*gap: 42px;*/
+  column-gap: 10px;
   row-gap: 65px;
 }
 
@@ -109,6 +109,12 @@
 /*==============================*/
 
 .offers__arrow {
+  transition: all 0.25s;
+}
+
+.offers__arrow:hover {
+  background-color: #dadada;
+  transform: scale(1.1);
 }
 
 .offers__arrow--next {
@@ -122,3 +128,5 @@
   left: -25px;
   position: absolute;
 }
+
+

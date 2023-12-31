@@ -32,6 +32,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: all 0.25s;
 }
 
 .footer__link:hover {
