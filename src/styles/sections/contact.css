@@ -9,13 +9,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
   margin-bottom: 20px;
-}
-
-.contact__map{
-  width: 100%;
-  min-height: 450px;
 }
 
 .contact__title {
@@ -23,7 +18,45 @@
 }
 
 .contact__button {
+  min-width: 200px;
   font-size: 21px;
-  margin-right: 15px;
   padding: 17px 45px;
+}
+
+.contact__map {
+  width: 100%;
+  min-height: 450px;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+  .contact__info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact__title {
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact__button {
+    width: 100%;
+    font-size: 21px;
+    padding: 17px 45px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .contact__map {
+    min-height: 300px;
+  }
 }
