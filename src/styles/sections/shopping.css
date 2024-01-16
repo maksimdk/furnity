@@ -9,6 +9,10 @@
   gap: 20px;
 }
 
+.shopping__content {
+  width: 50%;
+}
+
 .shopping__descriptions {
   margin-bottom: var(--unit);
 }
@@ -65,6 +69,13 @@
   background-color: var(--accent-yellow-color);
 }
 
+.shopping__img {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
 .shopping__img img {
+  /*text-align: right;*/
   /*width: 100%;*/
 }

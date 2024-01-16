@@ -1,5 +1,5 @@
 .top-section {
-  padding-top: 195px;
+  padding-top: calc(var(--block-space) * 3 + 45px);
   background: url("../../images/jpg/main-backgroundImage.jpg");
   background-size: cover;
   background-position: center;
@@ -16,9 +16,6 @@
 .top-section__title {
   max-width: 645px;
   text-align: center;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 60px;
   margin-bottom: 10px;
 }
@@ -37,4 +34,22 @@
 
 .top-section__button {
   padding: 18px 36px;
+}
+
+@media (max-width: 1200px) {
+  .top-section__title {
+    line-height: normal;
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 479.98px) {
 }
