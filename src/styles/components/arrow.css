@@ -17,3 +17,7 @@
 .arrow--previous {
   transform: rotate(180deg);
 }
+
+.arrow--next {
+  transform: rotate(360deg);
+}
