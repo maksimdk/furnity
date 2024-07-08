@@ -1,8 +1,8 @@
-export const createCard = (name, type, price, currency, image) => {
+export const createCard = (name, type, price, currency, imageUrl) => {
     return `
                   <div class="card__image">
                     <img
-                      src="${image}"
+                      src="${imageUrl}"
                       alt="${name}"
                     />
                   </div>
