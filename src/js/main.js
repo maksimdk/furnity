@@ -6,15 +6,15 @@ import { displayOffers } from "./offers/displayOffers.js";
 import { displayMenu } from "./header/displayMenu.js";
 import { displayCollections } from "./collections/displayCollections.js";
 
-
-try {
-    //HEADER
-    displayMenu(menuData);
 //HEADER
-    displayOffers(productData);
-    displayCollections(collectionData);
-} catch (err){
-    console.log(err.message)
+try {
+  displayMenu(menuData);
+} catch (err) {
+  console.log(err.name);
+  console.log(err.message);
+  console.log(err);
 }
+//HEADER
 
-
+displayOffers(productData);
+displayCollections(collectionData);

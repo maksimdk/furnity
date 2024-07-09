@@ -4,7 +4,7 @@ export const displayMenu = (dataMenu) => {
   ul.classList.add("menu__list");
 
   //+++++++++++++++++++++++++++++++++++++++++++++++
-  // menu.append(ul);
+  menu.append(ul);
   //+++++++++++++++++++++++++++++++++++++++++++++++
 
 
