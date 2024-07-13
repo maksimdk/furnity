@@ -1,10 +1,12 @@
 import { menuData } from "./header/data/menuData.js";
 import { productData } from "./offers/data/productData.js";
 import { collectionData } from "./collections/data/collectionData.js";
+import { reviewsData } from "./reviews/data/reviewsData.js";
 
 import { displayOffers } from "./offers/displayOffers.js";
 import { displayMenu } from "./header/displayMenu.js";
 import { displayCollections } from "./collections/displayCollections.js";
+import { displayReviews } from "./reviews/displayReviews.js";
 
 //HEADER
 try {
@@ -18,3 +20,4 @@ try {
 
 displayOffers(productData);
 displayCollections(collectionData);
+displayReviews(reviewsData);

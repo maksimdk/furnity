@@ -23,6 +23,7 @@
 }
 
 .reviews__content {
+  z-index: 1;
 }
 
 .reviews__title {
@@ -31,8 +32,13 @@
 }
 
 .review {
+  display: none;
   max-width: 385px;
   margin-bottom: 30px;
+}
+
+.review--active {
+  display: flex;
 }
 
 .review__user {
@@ -42,6 +48,8 @@
 }
 
 .review__user-image {
+  max-width: 50px;
+  max-height: 50px;
   border-radius: 50px;
 }
 
@@ -62,6 +70,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.review__content {
+  min-height: 80px;
 }
 
 .review__text {
