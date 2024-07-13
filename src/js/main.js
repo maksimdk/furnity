@@ -7,6 +7,9 @@ import { displayOffers } from "./offers/displayOffers.js";
 import { displayMenu } from "./header/displayMenu.js";
 import { displayCollections } from "./collections/displayCollections.js";
 import { displayReviews } from "./reviews/displayReviews.js";
+import { wrapperButton } from "./wrapper/wrapperButton.js";
+
+wrapperButton();
 
 //HEADER
 try {
