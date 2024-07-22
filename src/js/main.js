@@ -21,6 +21,5 @@ try {
 }
 //HEADER
 
-displayOffers(productData);
 displayCollections(collectionData);
 displayReviews(reviewsData);
