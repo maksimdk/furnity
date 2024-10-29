@@ -10,8 +10,8 @@
 @import "styles/components/button.css";
 @import "styles/components/arrow.css";
 @import "styles/components/title.css";
-/*@import "styles/components/desktop-form.css";*/
-/*@import "styles/components/mobile-form.css";*/
+@import "styles/components/form.css";
+
 
 @import "styles/sections/header.css";
 @import "styles/sections/top-section.css";
