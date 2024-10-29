@@ -1,8 +1,8 @@
 export const wrapperButton = () => {
-  const wrapperElem = document.querySelector(".wrapper");
+  const wrapperElem = document.querySelector('.wrapper');
 
-  const buttonElem = document.createElement("button");
-  buttonElem.classList.add("button", "arrow-button", "wrapper__button");
+  const buttonElem = document.createElement('button');
+  buttonElem.classList.add('button', 'arrow-button', 'wrapper__button');
   buttonElem.innerHTML = `
         <svg class="arrow">
           <use href="./images/favicons/sprite.svg#arrow"></use>
@@ -12,23 +12,23 @@ export const wrapperButton = () => {
 
   let previousPosition = 0;
 
-  buttonElem.addEventListener("click", (event) => {
+  buttonElem.addEventListener('click', event => {
     if (window.scrollY > 1) {
-      window.scrollTo({ top: 1, behavior: "smooth" });
-      // buttonElem.style.transform = "rotate(90deg)";
+      window.scrollTo({ top: 1, behavior: 'smooth' });
+      buttonElem.style.transform = 'rotate(90deg)';
       previousPosition = window.scrollY;
     } else {
-      // buttonElem.style.transform = "rotate(270deg)";
-      window.scrollTo({ top: previousPosition, behavior: "smooth" });
+      buttonElem.style.transform = 'rotate(270deg)';
+      window.scrollTo({ top: previousPosition, behavior: 'smooth' });
     }
   });
 
-  window.addEventListener("scroll", () => {
+  window.addEventListener('scroll', () => {
     if (window.scrollY > 0) {
-      buttonElem.style.display = "block";
+      buttonElem.style.display = 'block';
     }
     if (window.scrollY === 0) {
-      buttonElem.style.display = "none";
+      buttonElem.style.display = 'none';
     }
   });
 };

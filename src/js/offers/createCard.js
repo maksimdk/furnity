@@ -1,5 +1,5 @@
 export const createCard = (name, type, price, currency, imageUrl) => {
-    return `
+  return `    <li class="card">
                   <div class="card__image">
                     <img
                       src="${imageUrl}"
@@ -25,5 +25,5 @@ export const createCard = (name, type, price, currency, imageUrl) => {
                       </button>
                     </div>
                   </div>
-                `;
+                </li>`;
 };
