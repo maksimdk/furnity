@@ -10,10 +10,12 @@ import { displayReviews } from './reviews/displayReviews.js';
 import { wrapperButton } from './wrapper/wrapperButton.js';
 import { basket } from './basket/basketCount.js';
 import { showForm } from './form/showForm.js';
+import { showBasket } from './basket/showBasket.js';
 
 //==========WRAPPER==========
 wrapperButton();
 showForm();
+showBasket();
 basket();
 //==========WRAPPER==========
 

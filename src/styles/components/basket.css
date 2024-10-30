@@ -1,4 +1,5 @@
 .basket{
+	display: none;
 	width: 300px;
 	min-height: 200px;
 	background-color: var(--general-white-color);
@@ -7,6 +8,10 @@
 	top: 60px;
 	padding: 15px;
 	border-radius: 10px;
+}
+
+.active-basket{
+	display: block;
 }
 
 .basket__wrapper{

@@ -42,6 +42,11 @@
   margin-left: -25px;
 }
 
+/* =====ACTIVE CLASS====== */
+
+.active-menu{
+  display: block;
+}
 
 .menu {
   font-size: 14px;
@@ -88,6 +93,12 @@
   display: none;
 }
 
+/* =====ACTIVE CLASS====== */
+
+.active-search{
+  display: block;
+}
+
 .basket-actions__link svg {
   width: 24px;
   height: 24px;
@@ -112,10 +123,4 @@
   font-size: 10px;
   background-color: var(--accent-yellow-color);
   border-radius: 50%;
-}
-
-/* =====ACTIVE CLASS====== */
-
-.active{
-  display: flex;
 }
