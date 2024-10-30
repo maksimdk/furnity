@@ -10,9 +10,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Jost:wght@400;600;700;800&family=Nunito+Sans:opsz,wght@6..12,700&display=swap"
       rel="stylesheet" />
+    <link rel="shortcut icon" href="images/favicons/logo/logo.png" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="main.css" />
-    <title>Document</title>
+    <title>Furnity.</title>
   </head>
   <body>
     <div class="wrapper">
@@ -27,29 +28,23 @@
                 <p class="logo__title">Furnity.</p>
               </a>
             </div>
-            <nav class="menu header__menu">
+            <nav class="menu header__menu active">
               <!--Menu JS-->
             </nav>
 
-            <!--            <form class="form header__form" action="">-->
-            <!--              <label class="label header__form-label" for="mebel"></label>-->
-            <!--              <input-->
-            <!--                class="input header__form-input"-->
-            <!--                required-->
-            <!--                id="mebel"-->
-            <!--                type="text"-->
-            <!--                name="destination"-->
-            <!--              />-->
-            <!--              <button class="btn header__form-button">-->
-            <!--                <svg class="header__form-svg">-->
-            <!--                  <use href="images/favicons/sprite.svg#search" />-->
-            <!--                </svg>-->
-            <!--              </button>-->
-            <!--            </form>-->
+            <form class="form header__form" action="">
+              <label class="label header__form-label" for="mebel"></label>
+              <input class="input header__form-input" required id="mebel" type="text" name="destination" />
+              <button class="btn header__form-button">
+                <svg class="header__form-svg">
+                  <use href="images/favicons/sprite.svg#search" />
+                </svg>
+              </button>
+            </form>
 
             <ul class="basket-actions header__basket-actions">
               <li class="basket-actions__item">
-                <a href="" class="basket-actions__link">
+                <a href="" class="basket-actions__link basket-search active">
                   <svg>
                     <use href="images/favicons/sprite.svg#search" />
                   </svg>

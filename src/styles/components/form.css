@@ -8,13 +8,18 @@
 }
 
 .header__form {
-  display: flex;
+  display: none;
   width: 40%;
   border: 1px solid black;
   padding: 5px 5px;
   justify-content: space-between;
   border-radius: 20px;
   overflow: hidden;
+}
+
+/*========ACTIVE CLASS=======*/
+.active{
+  display: flex;
 }
 
 .header__form-label {
