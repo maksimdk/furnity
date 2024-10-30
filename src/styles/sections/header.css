@@ -6,6 +6,7 @@
 }
 
 .header__wrapper {
+  position: relative;
   display: flex;
   min-height: 40px;
   padding: 20px 0;
