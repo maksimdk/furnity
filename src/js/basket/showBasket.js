@@ -1,5 +1,6 @@
 export const showBasket = () => {
   const basket = document.querySelector('.basket');
+  const form = document.querySelector('.form');
 
   document.addEventListener('click', event => {
     if (event.target.closest('.basket-link')) {

@@ -10,8 +10,9 @@ export const showForm = () => {
       menuList.classList.toggle('active-menu');
       form.classList.toggle('active-form');
       linkSearch.classList.toggle('active-search');
+      return;
     }
-    if (!event.target.closest('body') && form.classList.contains('active')) {
+    if (!event.target.closest('.header__form')) {
       console.log('hew');
       menuList.classList.add('active-menu');
       form.classList.remove('active-form');
