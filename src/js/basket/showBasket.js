@@ -11,6 +11,15 @@ export const showBasket = () => {
     if (!event.target.closest('.basket__wrapper')) {
       basket.classList.remove('active-basket');
     }
+
+    //=========FIX BUG==============
+    const basketContent = document.querySelector('.basket__content');
+    // if (basketContent.clientHeight > 289) {
+    //   // basketContent.style.maxHeight = `260px`;
+    //   // basketContent.style.overflow = 'hidden';
+    //   basketContent.style.overflowY = 'scroll';
+    // }
+    //=========FIX BUG==============
   });
 
   document.addEventListener('keyup', event => {
