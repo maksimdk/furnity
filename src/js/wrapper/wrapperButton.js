@@ -12,7 +12,7 @@ export const wrapperButton = () => {
 
   let previousPosition = 0;
 
-  buttonElem.addEventListener('click', event => {
+  buttonElem.addEventListener('click', () => {
     if (window.scrollY > 1) {
       window.scrollTo({ top: 1, behavior: 'smooth' });
       buttonElem.style.transform = 'rotate(90deg)';

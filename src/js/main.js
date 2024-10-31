@@ -11,6 +11,7 @@ import { wrapperButton } from './wrapper/wrapperButton.js';
 import { basket } from './basket/basketCount.js';
 import { showForm } from './form/showForm.js';
 import { showBasket } from './basket/showBasket.js';
+import { basketOperation } from './basket/basketOperation.js';
 
 //==========WRAPPER==========
 wrapperButton();
@@ -48,3 +49,8 @@ displayReviews(reviewsData);
 //==========FOOTER==========
 
 //==========FOOTER==========
+
+//===========ADED ASYNC AWAIT=================
+setTimeout(() => {
+  basketOperation();
+}, 2000);

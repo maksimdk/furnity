@@ -3,7 +3,6 @@ export const showForm = () => {
   const form = document.querySelector('.header__form');
   const menuList = document.querySelector('.header__menu');
 
-  //=============== Доделать!!!!!!!!!!=======================
   document.addEventListener('click', event => {
     if (event.target.closest('.basket-search')) {
       event.preventDefault();
@@ -13,7 +12,6 @@ export const showForm = () => {
       return;
     }
     if (!event.target.closest('.header__form')) {
-      console.log('hew');
       menuList.classList.add('active-menu');
       form.classList.remove('active-form');
       linkSearch.classList.add('active-search');
