@@ -1,5 +1,5 @@
-import { createArrowButton } from '../components/createArrowButton.js';
-import { createList } from '../components/createList.js';
+import { createArrowButton } from '../../components/arrow/createArrowButton.js';
+import { createList } from '../../components/products/createList.js';
 
 export const displayOffers = product => {
   const element = document.querySelector('.offers__wrapper');
