@@ -1,4 +1,4 @@
-import { createList } from '../components/createList.js';
+import { createList } from '../../components/products/createList.js';
 import { collectionsMenuData } from './data/collectionsMenuData.js';
 
 export const displayCollections = product => {

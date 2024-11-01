@@ -1,17 +1,17 @@
-import { menuData } from './header/data/menuData.js';
-import { productData } from './offers/data/productData.js';
-import { collectionData } from './collections/data/collectionData.js';
-import { reviewsData } from './reviews/data/reviewsData.js';
+import { menuData } from './sections/header/data/menuData.js';
+// import { productData } from './offers/data/productData.js';
+import { collectionData } from './sections/collections/data/collectionData.js';
+import { reviewsData } from './sections/reviews/data/reviewsData.js';
 
-import { displayOffers } from './offers/displayOffers.js';
-import { displayMenu } from './header/displayMenu.js';
-import { displayCollections } from './collections/displayCollections.js';
-import { displayReviews } from './reviews/displayReviews.js';
+import { displayOffers } from './sections/offers/displayOffers.js';
+import { displayMenu } from './sections/header/displayMenu.js';
+import { displayCollections } from './sections/collections/displayCollections.js';
+import { displayReviews } from './sections/reviews/displayReviews.js';
 import { wrapperButton } from './wrapper/wrapperButton.js';
-import { basket } from './basket/basketCount.js';
-import { showForm } from './form/showForm.js';
-import { showBasket } from './basket/showBasket.js';
-import { basketOperation } from './basket/basketOperation.js';
+import { basket } from './components/basket/basketCount.js';
+import { showForm } from './components/form/showForm.js';
+import { showBasket } from './components/basket/showBasket.js';
+import { basketOperation } from './components/basket/basketOperation.js';
 
 //==========WRAPPER==========
 wrapperButton();
