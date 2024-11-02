@@ -32,16 +32,45 @@
               <!--Menu JS-->
             </nav>
 
-            <form class="form header__form" action="">
-              <label class="label header__form-label" for="mebel"></label>
-              <input class="input header__form-input" required id="mebel" type="text" name="destination" />
-              <button class="btn header__form-button">
-                <svg class="header__form-svg">
-                  <use href="images/favicons/sprite.svg#search" />
-                </svg>
-              </button>
-            </form>
-
+            <div class="header__form">
+              <form name="main" class="form main-form" action="">
+                <label class="label main-form__label" for="furniture"></label>
+                <input
+                  class="input main-form__input"
+                  required
+                  id="furniture"
+                  type="text"
+                  name="searchFurniture"
+                  placeholder="Enter product name" />
+                <button class="btn main-form__button">
+                  <svg class="main-form__svg">
+                    <use href="images/favicons/sprite.svg#search" />
+                  </svg>
+                </button>
+              </form>
+              <div class="header__result">
+                <div class="result__content">
+                  <ul class="result__products">
+                    <li class="result__product">
+                      <div class="product__content">
+                        <div class="product__image">
+                          <img
+                            src="http://127.0.0.1:5500/src/images/product/Nyantuy-Chair.png"
+                            alt="
+                      Nyantuy Chair
+                    " />
+                        </div>
+                        <div class="product__title">
+                          <p class="product__name">Nyantuy Chair</p>
+                          <p class="product__category">Chair</p>
+                        </div>
+                      </div>
+                      <p class="product__price">$ 335</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <ul class="basket-actions header__basket-actions">
               <li class="basket-actions__item">
                 <a href="" class="basket-actions__link basket-search active-search">
@@ -65,7 +94,9 @@
               <div class="basket__wrapper">
                 <h3 class="basket__title">Your Cart</h3>
                 <div class="basket__content">
-                  <ul class="products"></ul>
+                  <ul class="basket__products">
+                    <!-- JS -->
+                  </ul>
                 </div>
                 <div class="basket__price">
                   <p class="basket__total">Total Payment</p>
