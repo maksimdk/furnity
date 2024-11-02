@@ -5,12 +5,13 @@
 }
 
 .input {
+  outline: 0
 }
 
 .header__form {
   display: none;
   width: 40%;
-  border: 1px solid black;
+  border: 2px solid var(--text-main-color);
   padding: 5px 5px;
   justify-content: space-between;
   border-radius: 20px;
@@ -31,6 +32,11 @@
   width: 100%;
   outline: none;
   background-color: transparent;
+  /* text-decoration: none;
+  color: var(--text-main-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal; */
 }
 
 .header__form-button {

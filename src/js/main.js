@@ -12,12 +12,14 @@ import { basket } from './components/basket/basketCount.js';
 import { showForm } from './components/form/showForm.js';
 import { showBasket } from './components/basket/showBasket.js';
 import { basketOperation } from './components/basket/basketOperation.js';
+import { searchForm } from './components/form/searchFrom.js';
 
 //==========WRAPPER==========
 wrapperButton();
 showForm();
 showBasket();
 basket();
+searchForm();
 //==========WRAPPER==========
 
 //==========HEADER==========
