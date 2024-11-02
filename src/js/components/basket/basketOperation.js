@@ -1,6 +1,6 @@
 export const basketOperation = () => {
   const offersCards = document.querySelector('.offers__cards');
-  const products = document.querySelector('.products');
+  const products = document.querySelector('.basket__products');
   let basketSum = document.querySelector('.basket__sum');
 
   document.addEventListener('click', event => {
@@ -12,7 +12,7 @@ export const basketOperation = () => {
       const cardName = parent.querySelector('.card__title-link').textContent;
 
       products.innerHTML += `
-                    <li class="product">
+                    <li class="basket__product">
                       <div class="product__content">
                         <div class="product__image">
                           <img src="${cardImage}" alt="${cardName}" />

@@ -73,14 +73,14 @@
   transform: translateX(-50%);
 } */
 
-.products{
+.basket__products{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 10px;
 }
 
-.product{
+.basket__product{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

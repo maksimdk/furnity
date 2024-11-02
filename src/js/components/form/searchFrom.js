@@ -1,6 +1,6 @@
 export const searchForm = () => {
   const form = document.forms.main;
-  const formInput = document.querySelector('.header__form-input');
+  const formInput = document.querySelector('.main-form__input');
 
   const formInputPlaceholder = formInput.placeholder;
   formInput.addEventListener('focus', event => {
