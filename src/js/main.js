@@ -1,50 +1,36 @@
 import { urlProduct } from './constants/constants.js';
+import { getData } from './utils/getData.js';
 
-import { menuData } from './sections/header/data/menuData.js';
-// import { productData } from './offers/data/productData.js';
 import { collectionData } from './sections/collections/data/collectionData.js';
 import { reviewsData } from './sections/reviews/data/reviewsData.js';
 
 import { displayOffers } from './sections/offers/displayOffers.js';
-import { displayMenu } from './sections/header/displayMenu.js';
 import { displayCollections } from './sections/collections/displayCollections.js';
 import { displayReviews } from './sections/reviews/displayReviews.js';
-import { wrapperButton } from './wrapper/wrapperButton.js';
-import { basket } from './components/basket/basketCount.js';
-import { showForm } from './components/form/showForm.js';
-import { showBasket } from './components/basket/showBasket.js';
-import { basketOperation } from './components/basket/basketOperation.js';
-import { searchForm } from './components/form/searchFrom.js';
+import { showHeader } from './sections/header/showHeader.js';
 
-//==========WRAPPER==========
-wrapperButton();
-showForm();
-showBasket();
-basket();
-searchForm();
-//==========WRAPPER==========
+//==========Wrapper & Header==========
 
-//==========HEADER==========
-try {
-  displayMenu(menuData);
-} catch (err) {
-  console.log(err.name);
-  console.log(err.message);
-  console.log(err);
-}
-//==========HEADER==========
+showHeader();
+//==========Wrapper & Header==========
 
 //==========MAIN==========
 //OFFERS
-fetch(urlProduct)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error(`${response.status} - ${response.statusText}`);
-    }
-    return response.json();
-  })
-  .then(json => displayOffers(json))
-  .catch(err => console.log(err.message));
+
+(async () => {
+  const data = await getData(urlProduct);
+  displayOffers(data);
+})();
+
+// fetch(urlProduct)
+//   .then(response => {
+//     if (!response.ok) {
+//       throw new Error(`${response.status} - ${response.statusText}`);
+//     }
+//     return response.json();
+//   })
+//   .then(json => displayOffers(json))
+//   .catch(err => console.log(err.message));
 //OFFERS
 displayCollections(collectionData);
 displayReviews(reviewsData);
@@ -55,6 +41,3 @@ displayReviews(reviewsData);
 //==========FOOTER==========
 
 //===========ADED ASYNC AWAIT=================
-setTimeout(() => {
-  basketOperation();
-}, 2000);
