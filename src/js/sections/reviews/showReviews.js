@@ -1,11 +1,12 @@
-import { createReviews } from "./createReviews.js";
+import { createReviews } from './createReviews.js';
+import { reviewsData } from './data/reviewsData.js';
 
-export const displayReviews = (reviews) => {
-  const contentElem = document.querySelector(".reviews__content");
+export const showReviews = reviews => {
+  const contentElem = document.querySelector('.reviews__content');
   contentElem.append(createReviews(reviews));
 
-  const btnElem = document.createElement("div");
-  btnElem.classList.add("reviews__scrolling");
+  const btnElem = document.createElement('div');
+  btnElem.classList.add('reviews__scrolling');
   btnElem.innerHTML = `
         <button
                     class="button arrow-button reviews__arrow reviews__arrow--previous"
@@ -28,17 +29,17 @@ export const displayReviews = (reviews) => {
   `;
   contentElem.append(btnElem);
 
-  const reviewsArray = document.querySelectorAll(".review");
+  const reviewsArray = document.querySelectorAll('.review');
   let reviewIndex = 0;
 
   function show(index) {
-    reviewsArray[reviewIndex].style.display = "none";
-    reviewsArray[index].style.display = "block";
+    reviewsArray[reviewIndex].style.display = 'none';
+    reviewsArray[index].style.display = 'block';
     reviewIndex = index;
   }
 
-  btnElem.addEventListener("click", (event) => {
-    if (event.target.closest(".reviews__arrow--previous")) {
+  btnElem.addEventListener('click', event => {
+    if (event.target.closest('.reviews__arrow--previous')) {
       let index = reviewIndex - 1;
 
       if (index < 0) {
@@ -46,7 +47,7 @@ export const displayReviews = (reviews) => {
       }
       show(index);
     }
-    if (event.target.closest(".reviews__arrow--next")) {
+    if (event.target.closest('.reviews__arrow--next')) {
       let index = reviewIndex + 1;
       if (index >= reviewsArray.length) {
         index = 0;
@@ -56,3 +57,5 @@ export const displayReviews = (reviews) => {
   });
   show(reviewIndex);
 };
+
+showReviews(reviewsData);
