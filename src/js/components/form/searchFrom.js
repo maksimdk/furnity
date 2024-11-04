@@ -1,3 +1,6 @@
+import { urlProduct } from '../../constants/constants.js';
+import { searchURL } from './searchURL.js';
+
 export const searchForm = () => {
   const form = document.forms.main;
   const formInput = document.querySelector('.main-form__input');
@@ -20,7 +23,7 @@ export const searchForm = () => {
   }
 
   form.addEventListener('submit', event => {
-    fetch(`https://6696e3d50312447373c404b2.mockapi.io/offers/product?search=${formInput.value}`)
+    fetch(searchURL(urlProduct))
       .then(response => {
         if (response.status === 404) {
           alert('Введите корректные данные!');

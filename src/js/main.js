@@ -1,3 +1,5 @@
+import { urlProduct } from './constants/constants.js';
+
 import { menuData } from './sections/header/data/menuData.js';
 // import { productData } from './offers/data/productData.js';
 import { collectionData } from './sections/collections/data/collectionData.js';
@@ -34,7 +36,7 @@ try {
 
 //==========MAIN==========
 //OFFERS
-fetch('https://6696e3d50312447373c404b2.mockapi.io/offers/product')
+fetch(urlProduct)
   .then(response => {
     if (!response.ok) {
       throw new Error(`${response.status} - ${response.statusText}`);
