@@ -25,3 +25,5 @@ export const showHeader = async () => {
     console.log(err);
   }
 };
+
+showHeader();

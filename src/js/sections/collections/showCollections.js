@@ -1,7 +1,8 @@
 import { createList } from '../../components/products/createList.js';
+import { collectionData } from './data/collectionData.js';
 import { collectionsMenuData } from './data/collectionsMenuData.js';
 
-export const displayCollections = product => {
+export const showCollections = product => {
   const element = document.querySelector('.collections__wrapper');
 
   const menuUl = document.createElement('ul');
@@ -17,3 +18,5 @@ export const displayCollections = product => {
   element.append(menuUl);
   element.append(createList(product, 'collections'));
 };
+
+showCollections(collectionData);
