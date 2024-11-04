@@ -1,4 +1,6 @@
 import { urlProduct } from '../../constants/constants.js';
+import { showFurnity } from '../../sections/header/showFurnity.js';
+import { getData } from '../../utils/getData.js';
 import { searchURL } from './searchURL.js';
 
 export const searchForm = () => {
@@ -22,50 +24,39 @@ export const searchForm = () => {
     resultBlock.style.display = 'none';
   }
 
-  form.addEventListener('submit', event => {
-    fetch(searchURL(urlProduct))
-      .then(response => {
-        if (response.status === 404) {
-          alert('Введите корректные данные!');
-          return;
-        }
-        if (!response.ok) {
-          throw new Error(`${response.status} - ${response.statusText}`);
-        }
-        return response.json();
-      })
-      .then(json => {
-        if (json.length === 0) {
-          alert('Введите корректные данные!');
-          return;
-        }
+  form.addEventListener('input', event => {
+    (async () => {
+      const json = await getData(searchURL(urlProduct));
+      showFurnity(json);
+    })();
+    if (formInput.value.length === 0) {
+      resultBlock.style.display = 'none';
+    }
+    resultBlock.style.display = 'block';
 
-        resultBlock.style.display = 'block';
+    resultProducts.innerHTML = '';
 
-        json.forEach(item => {
-          resultProducts.innerHTML += `
-										<li class="result__product">
-                      <div class="product__content">
-                        <div class="product__image">
-                          <img
-                            src="${item.imageUrl}"
-                            alt="${item.name}" />
-                        </div>
-                        <div class="product__title">
-                          <p class="product__name">${item.name}</p>
-                          <p class="product__category">${item.type}</p>
-                        </div>
-                      </div>
-                      <p class="product__price">${item.currency} ${item.price}</p>
-                    </li>
-					`;
-        });
-      })
-      .catch(err => console.log(err.message));
-    event.preventDefault();
+    // fetch(searchURL(urlProduct))
+    //   .then(response => {
+    //     if (response.status === 404) {
+    //       alert('Введите корректные данные!');
+    //       return;
+    //     }
+    //     if (!response.ok) {
+    //       throw new Error(`${response.status} - ${response.statusText}`);
+    //     }
+    //     return response.json();
+    //   })
+    //   .then(json => {
+    //     if (json.length === 0) {
+    //       alert('Введите корректные данные!');
+    //       return;
+    //     }
+
+    //     resultBlock.style.display = 'block';
+    //     searchFurnity(json);
+    //   })
+    //   .catch(err => console.log(err.message));
+    // event.preventDefault();
   });
-
-  // Add block clearing
-  resultProducts.innerHTML = '';
-  // Add block clearing
 };
