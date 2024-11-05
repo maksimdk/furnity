@@ -1,4 +1,6 @@
 import { createList } from '../../components/products/createList.js';
+import { urlProduct } from '../../constants/constants.js';
+import { getData } from '../../utils/getData.js';
 import { collectionData } from './data/collectionData.js';
 import { collectionsMenuData } from './data/collectionsMenuData.js';
 
@@ -19,4 +21,7 @@ export const showCollections = product => {
   element.append(createList(product, 'collections'));
 };
 
-showCollections(collectionData);
+(async () => {
+  const data = await getData(urlProduct);
+  showCollections(data);
+})();
