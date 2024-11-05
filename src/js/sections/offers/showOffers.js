@@ -2,6 +2,7 @@ import { createArrowButton } from '../../components/arrow/createArrowButton.js';
 import { createList } from '../../components/products/createList.js';
 import { urlProduct } from '../../constants/constants.js';
 import { getData } from '../../utils/getData.js';
+import { collectionData } from '../collections/data/collectionData.js';
 
 export const showOffers = product => {
   const element = document.querySelector('.offers__wrapper');
@@ -21,7 +22,9 @@ export const showOffers = product => {
   // element.append(createArrowButton('next'));
 };
 
-(async () => {
-  const data = await getData(urlProduct);
-  showOffers(data);
-})();
+// (async () => {
+//   const data = await getData(urlProduct);
+//   showOffers(data);
+// })();
+
+showOffers(collectionData)

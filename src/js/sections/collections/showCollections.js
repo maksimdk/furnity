@@ -1,4 +1,6 @@
 import { createList } from '../../components/products/createList.js';
+import { urlProduct } from '../../constants/constants.js';
+import { getData } from '../../utils/getData.js';
 import { collectionData } from './data/collectionData.js';
 import { collectionsMenuData } from './data/collectionsMenuData.js';
 
@@ -10,13 +12,23 @@ export const showCollections = product => {
   collectionsMenuData.forEach(item => {
     menuUl.innerHTML += `
                 <li class="collections__menu-item">
+                <a href="/${item}" class="collections__link">
                   <button class="btn collections__menu-button">${item}</button>
-                </li>
+                </a>
+              </li>
       `;
   });
 
   element.append(menuUl);
   element.append(createList(product, 'collections'));
+
+
+
+
+  
 };
 
-showCollections(collectionData);
+(async () => {
+  const data = await getData(urlProduct);
+  showCollections(data);
+})();

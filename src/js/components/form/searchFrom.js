@@ -24,6 +24,15 @@ export const searchForm = () => {
     resultBlock.style.display = 'none';
   }
 
+
+  //=========FIX SEARCH!!!!!!!!!!!!===========
+  //=========FIX SEARCH!!!!!!!!!!!!===========
+  //=========FIX SEARCH!!!!!!!!!!!!===========
+  //=========FIX SEARCH!!!!!!!!!!!!===========
+  //=========FIX SEARCH!!!!!!!!!!!!===========
+  //=========FIX SEARCH!!!!!!!!!!!!===========
+  //=========FIX SEARCH!!!!!!!!!!!!===========
+  //=========FIX SEARCH!!!!!!!!!!!!===========
   form.addEventListener('input', event => {
     (async () => {
       const json = await getData(searchURL(urlProduct));
@@ -35,6 +44,16 @@ export const searchForm = () => {
     resultBlock.style.display = 'block';
 
     resultProducts.innerHTML = '';
+
+  //=========FIX SEARCH!!!!!!!!!!!!===========
+  //=========FIX SEARCH!!!!!!!!!!!!===========
+  //=========FIX SEARCH!!!!!!!!!!!!===========
+  //=========FIX SEARCH!!!!!!!!!!!!===========
+  //=========FIX SEARCH!!!!!!!!!!!!===========
+  //=========FIX SEARCH!!!!!!!!!!!!===========
+  //=========FIX SEARCH!!!!!!!!!!!!===========
+  //=========FIX SEARCH!!!!!!!!!!!!===========
+
 
     // fetch(searchURL(urlProduct))
     //   .then(response => {
