@@ -12,13 +12,20 @@ export const showCollections = product => {
   collectionsMenuData.forEach(item => {
     menuUl.innerHTML += `
                 <li class="collections__menu-item">
+                <a href="/${item}" class="collections__link">
                   <button class="btn collections__menu-button">${item}</button>
-                </li>
+                </a>
+              </li>
       `;
   });
 
   element.append(menuUl);
   element.append(createList(product, 'collections'));
+
+
+
+
+  
 };
 
 (async () => {

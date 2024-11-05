@@ -32,6 +32,10 @@
   margin-bottom: 100px;
 }
 
+.collections__link{
+  color: var(--text-main-color);
+}
+
 .collections__menu-button {
   padding: 10px 25px;
   border-radius: 50px;
