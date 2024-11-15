@@ -1,0 +1,30 @@
+.button {
+  border: none;
+  cursor: pointer;
+  color: var(--general-white-color);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 50px;
+  background-color: var(--accent-yellow-color);
+  transition: background-color 0.25s ;
+}
+
+.button:hover {
+  background-color: var(--accent-pink-color);
+}
+
+/*======================================*/
+/*ОБНУЛЕНИЕ КНОПОК ПОКА РАБОТАЕТ ТОЛЬКО В БЛОКЕ !!!collections!!!*/
+.btn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/*======================================*/

@@ -1,0 +1,140 @@
+.basket{
+	display: none;
+	width: 300px;
+	/* min-height: 200px; */
+	background-color: var(--general-white-color);
+	position: absolute;
+	right: 0;
+	top: 60px;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.active-basket{
+	display: block;
+}
+
+.basket__wrapper{
+}
+
+.basket__title{
+	margin-bottom: 15px;
+	position: relative;
+	text-decoration: none;
+  color: var(--text-main-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal
+}
+
+.basket__title::after{
+	content: ' ';
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid var(--line-color);
+	opacity: 31%;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+.basket__content{
+	position: relative;
+	margin-bottom: 25px;
+	max-height: 260px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.basket__content::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f9f9fd;
+}
+
+.basket__content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--accent-yellow-color);
+}
+
+.basket__content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background-color: #f9f9fd;
+}
+
+/* .basket__content::after{
+	content: ' ';
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid var(--line-color);
+	opacity: 31%;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+} */
+
+.basket__products{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.basket__product{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.product__content{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.product__image{
+	background-size: auto;
+}
+
+.product__image img{
+	width: 60px;
+	height: 60px;
+}
+
+.product__name{
+	text-decoration: none;
+	color: var(--text-main-color);
+	font-size: 18px;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.product__category{
+	color: #8d8d8d;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.product__price{
+	color: var(--text-main-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.basket__price{
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: space-between;
+	text-decoration: none;
+  color: var(--text-main-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.basket__button{
+	width: 100%;
+	padding: 10px;
+}
