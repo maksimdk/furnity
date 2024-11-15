@@ -1,16 +1,16 @@
-export const createReviews = (arr) => {
-  const ulElem = document.createElement("ul");
-  ulElem.classList.add("reviews__list");
+export const createReviews = arr => {
+  const ulElem = document.createElement('ul');
+  ulElem.classList.add('reviews__list');
 
-  arr.forEach((item) => {
-    const newLi = document.createElement("li");
-    newLi.classList.add("review");
+  arr.forEach(item => {
+    const newLi = document.createElement('li');
+    newLi.classList.add('review');
     ulElem.append(newLi);
     newLi.innerHTML = `
                     <div class="review__user">
                       <img
                               class="review__user-image"
-                              src="${item.imageUrl || './images/favicons/reviewsIcons/pngwing.com.png'}"
+                              src="${item.imageUrl || 'src/images/favicons/reviewsIcons/pngwing.com.png'}"
                               alt="${item.name}"
                       />
                       <div class="review__user-info">

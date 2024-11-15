@@ -14,7 +14,7 @@ export const showReviews = reviews => {
                     aria-label="Previous review"
                   >
                     <svg class="arrow arrow--previous">
-                      <use href="images/favicons/sprite.svg#next" />
+                      <use href="src/images/favicons/sprite.svg#next" />
                     </svg>
                   </button>
                   <button
@@ -23,7 +23,7 @@ export const showReviews = reviews => {
                     aria-label="Next review"
                   >
                     <svg class="arrow">
-                      <use href="images/favicons/sprite.svg#next" />
+                      <use href="src/images/favicons/sprite.svg#next" />
                     </svg>
                   </button>
   `;

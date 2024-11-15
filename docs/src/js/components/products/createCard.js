@@ -20,7 +20,7 @@ export const createCard = (name, type, price, currency, imageUrl) => {
                       </p>
                       <button class="button card__button">
                         <svg>
-                          <use href="images/favicons/sprite.svg#plus" />
+                          <use href="src/images/favicons/sprite.svg#plus" />
                         </svg>
                       </button>
                     </div>

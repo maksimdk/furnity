@@ -6,7 +6,7 @@ export const createArrowButton = direction => {
   arrowBtn.setAttribute('aria-label', `${direction} product`);
   arrowBtn.innerHTML = `
                   <svg class="arrow arrow--${direction}">
-                    <use href="./images/favicons/sprite.svg#arrow" />
+                    <use href="src/images/favicons/sprite.svg#arrow" />
                   </svg>
   `;
 
