@@ -5,7 +5,7 @@ export const wrapperButton = () => {
   buttonElem.classList.add('button', 'arrow-button', 'wrapper__button');
   buttonElem.innerHTML = `
         <svg class="arrow">
-          <use href="./images/favicons/sprite.svg#arrow"></use>
+          <use href="src/images/favicons/sprite.svg#arrow"></use>
         </svg>
   `;
   wrapperElem.append(buttonElem);

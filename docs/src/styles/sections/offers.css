@@ -25,6 +25,13 @@
   flex-direction: column;
   flex: 0 0 268px;
   padding-bottom: 58px;
+  border-radius: 20px;
+}
+
+.active__card{
+  box-shadow: 0px 0px 20px var(--secondary-text-color);
+  transform: scale(1.035);
+  transition: 0.25s;
 }
 
 .card__image {
