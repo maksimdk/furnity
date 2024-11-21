@@ -6,4 +6,7 @@ import { showReviews } from './sections/reviews/showReviews.js';
 //===================
 import { showCard } from './components/products/showCard.js';
 showCard();
+import { showMenuBruger } from './components/menu/showMenuBurger.js';
+showMenuBruger();
+
 //===================
