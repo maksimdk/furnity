@@ -71,6 +71,7 @@
 .basket-actions {
   display: flex;
   gap: 36px;
+  align-items: center;
 }
 
 .header__basket-actions {
@@ -141,6 +142,46 @@
     z-index: 4;
     display: block;
   }
+
+  .basket-burger{
+  display: block;
+  width: 18px;
+  height: 16px;
+  position: relative;
+  z-index: 5;
+  cursor: pointer;
+  }
+
+  .basket-burger span{
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-main-color);
+    }
+
+    .basket-burger span:first-child{
+      top: 0;
+    }
+    .basket-burger span:last-child{
+      top: auto;
+      bottom: 0;
+    }
+
+    .active-button span{
+      transition: all .1s;
+
+      transform: scale(0);
+    }
+    .active-button span:first-child{
+      transform: rotate(-45deg);
+      top: calc(50% - 1px);
+    }
+    .active-button span:last-child{
+      transform: rotate(45deg);
+      bottom: calc(50% - 1px)
+    }
 
   .header__menu{
     margin: 0;

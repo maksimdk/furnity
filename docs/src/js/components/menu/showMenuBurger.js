@@ -7,7 +7,7 @@ export const showMenuBruger = () => {
   if (menu && menuBtn) {
     menuBtn.addEventListener('click', () => {
       menu.classList.toggle('active-mob');
-      menuBtn.classList.toggle('active');
+      menuBtn.classList.toggle('active-button');
       body.classList.toggle('lock');
     });
   }
