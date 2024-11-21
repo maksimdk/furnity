@@ -8,6 +8,7 @@
 }
 
 .header__result{
+  z-index: 2;
   position: absolute;
   padding: 30px;
   width: 150%;
